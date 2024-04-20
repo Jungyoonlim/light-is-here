@@ -36,7 +36,4 @@ yarn-error.log*
 next-env.d.ts
 
 # data 
-light/src/app/data/original_pdf/
-light/src/app/data/text_file/
-light/src/app/data/extract.py
-light/src/app/data/modified_text
+light/src/app/data/* 
