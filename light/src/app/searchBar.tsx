@@ -4,7 +4,7 @@ import { useSearchParams, usePathname, useRouter } from 'next/navigation';
 import Link from 'next/link'
 // TODO: Fix the directory 
 import { Badge, badgeVariants } from "@/components/ui/badge"
-import { Input } from "@/components/ui/input"
+import { Input } from "../../components/ui/input"
 import { Button } from "@/components/ui/button"
 import { useState, useEffect, useMemo } from "react"
 import { QrCode } from 'lucide-react';
@@ -71,7 +71,7 @@ export default function SearchBar({ setLoadingTrue }: SearchBarProps) {
                         placeholder="Search project descriptions..."
                         name="query"
                         value={searchTerm}
-                        onChange={(event) => setSearchTerm(event.target.value)}
+                        onChange={(event: React.ChangeEvent<HTMLInputElement>) => setSearchTerm(event.target.value)}
                     />
                     <Button type="submit">Search</Button>
                 </form>
