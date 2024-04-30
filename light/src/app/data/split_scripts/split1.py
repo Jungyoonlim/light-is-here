@@ -100,5 +100,5 @@ for title in titles:
 
 # Write the JSON data to a file in the data directory
 os.makedirs('../data', exist_ok=True)
-with open('../data/part1_data.json', 'w', encoding='utf-8') as file:
+with open('../json_data/part1_data.json', 'w', encoding='utf-8') as file:
     json.dump(json_data, file, ensure_ascii=False, indent=4)
