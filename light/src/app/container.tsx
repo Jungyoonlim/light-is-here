@@ -1,7 +1,7 @@
 "use client"
 
 import SearchBar from "./searchBar"
-import WinnersTable from "./textTable"
+import TextTable from "./textTable"
 import { Winner, columns } from "./columns"
 import { useState, useEffect, useMemo, Suspense } from "react"
 import { getSortedData } from './utils/getSortedData'
@@ -75,7 +75,7 @@ export default function Container({ data }: any) {
             }
             <Suspense fallback={<p>Loading...</p>}>
                 <div>
-                    { !loading && <WinnersTable columns={columns} data={renderedData} query={query} /> }
+                    { !loading && <TextTable columns={columns} data={renderedData} query={query} /> }
                 </div>
             </Suspense>
         </>

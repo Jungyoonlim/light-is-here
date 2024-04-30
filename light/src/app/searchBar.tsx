@@ -1,13 +1,10 @@
 "use client"
 
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
-import Link from 'next/link'
-// TODO: Fix the directory 
 import { Badge, badgeVariants } from "@/components/ui/badge"
 import { Input } from "../../components/ui/input"
-import { Button } from "@/components/ui/button"
-import { useState, useEffect, useMemo } from "react"
-import { QrCode } from 'lucide-react';
+import { Button } from "../../components/ui/button"
+import { useState } from "react"
 
 export const BADGES = [
     // Add appropriate badges here
@@ -26,6 +23,7 @@ export default function SearchBar({ setLoadingTrue }: SearchBarProps) {
 
     const [searchTerm, setSearchTerm] = useState(searchParams.get('query') || '');
 
+    // handles search function, takes in a term and updates the URL, doesn't return anything 
     function handleSearch(term: string) {
         if (term) {
             params.set('query', term);
