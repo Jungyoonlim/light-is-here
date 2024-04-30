@@ -2,7 +2,7 @@ import re
 import os
 import json
 
-# The table of contents
+# The table of contents for pdf1 
 toc = '''1. 궁금하니 ? 알려줄게 , 차크라 …
 2. 정신에도 프로그램 탑재가 필요해
 3. 새 프로그램 탑재시 기존 프로그램과의 충돌
@@ -99,6 +99,5 @@ for title in titles:
         print(f"Content not found for title: {title}")
 
 # Write the JSON data to a file in the data directory
-os.makedirs('../data', exist_ok=True)
 with open('../json_data/part1_data.json', 'w', encoding='utf-8') as file:
     json.dump(json_data, file, ensure_ascii=False, indent=4)

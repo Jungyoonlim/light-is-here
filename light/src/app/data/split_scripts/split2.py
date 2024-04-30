@@ -79,6 +79,5 @@ for title in titles:
         print(f"Content not found for title: {title}")
 
 # Write the JSON data to a file in the data directory
-os.makedirs('../data', exist_ok=True)
 with open('../json_data/part2_data.json', 'w', encoding='utf-8') as file:
     json.dump(json_data, file, ensure_ascii=False, indent=4)
