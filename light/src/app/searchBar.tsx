@@ -37,12 +37,12 @@ export default function SearchBar({ setLoadingTrue }: SearchBarProps) {
 
     return (
         <>
-            <h2 className="font-semibold mb-2">Semantic search over every Emergent Ventures winner</h2>
+            <h2 className="font-semibold mb-2">Semantic search over every Dada's text</h2>
             <p className="mb-4 text-sm">
-                <a className="underline" href="https://www.mercatus.org/emergent-ventures">Emergent Ventures</a> is 
+                <a className="underline" href="https://cafe.naver.com/herecamelight">Here comes light cafe.</a> 
             </p>
             <p className="mb-4 text-sm">
-                이 사이트는 다다님의 텍스트를 한 곳에 모았습니다. 오른쪽 상단의 Github 링크를 클릭하면 CSV도 찾을 수 있습니다.
+                이 사이트는 다다님의 텍스트를 한 곳에 모았습니다. 오른쪽 상단의 Github 링크를 클릭하면 소스 코드를 찾을 수 있습니다.
             </p>
             <p className="mb-4 text-sm">
                 이 검색창은 정확한 키워드를 입력할 필요가 없습니다. 머신러닝 기법인 임베딩을 사용하여 충분히 가까운 매치를 찾습니다.
